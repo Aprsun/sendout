@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        
+    <modelVersion>4.0.0</modelVersion>
+        
+    <parent>
+                
+        <groupId>com.sankuai.sec.outsend</groupId>
+                
+        <artifactId>fortest</artifactId>
+                
+        <version>${revision}</version>
+            
+    </parent>
+        
+    <artifactId>fortest-infrastructure</artifactId>
+        
+    <version>${revision}</version>
+        
+    <packaging>jar</packaging>
+        
+    <name>fortest-infrastructure</name>
+        
+    <dependencies>
+		
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <optional>true</optional>
+		
+        </dependency>
+		
+        <dependency>
+            <groupId>com.meituan.mdp.boot</groupId>
+            <artifactId>mdp-boot-starter-org</artifactId>
+		
+        </dependency>
+		
+        <dependency>
+            <groupId>com.meituan.mdp.boot</groupId>
+            <artifactId>mdp-boot-starter-squirrel</artifactId>
+		
+        </dependency>
+		
+        <dependency>
+            <groupId>com.meituan.mdp.boot</groupId>
+            <artifactId>mdp-boot-starter-web-tob</artifactId>
+		
+        </dependency>
+		
+        <dependency>
+            <groupId>com.meituan.mdp.boot</groupId>
+            <artifactId>mdp-boot-starter-zebra</artifactId>
+		
+        </dependency>
+
+    </dependencies>
+        
+    <build>
+                
+        <plugins>
+                        
+            <plugin>
+                                
+                <groupId>org.mybatis.generator</groupId>
+                                
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                            
+            </plugin>
+                        
+            <plugin>
+                                
+                <groupId>com.meituan.mdp.maven.plugins</groupId>
+                                
+                <artifactId>mdp-mybatis-generator-maven-plugin</artifactId>
+                            
+            </plugin>
+                    
+        </plugins>
+            
+    </build>
+    
+</project>
